@@ -1,12 +1,13 @@
 import node
 from node import Node
-from parse_grammar import parse_expression
 from parse_program import parse_program
 from split import tokenize
 
 code = '''
 begin
-    a := 42
+    a := 42;
+    b := a + 4;
+    c := b - 90
 end
 '''
 
